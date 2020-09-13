@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+
+
+body{
+	background: url(bg2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+margin: 0px;
+padding: 0px;
+
+}
+.style2{
+	padding-right: 0px !important;
+	padding-left: 0px !important; 
+}
+
+.carousel.fade {
+     opacity: 1;
+}
+.carousel.fade .item {
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0; /* hide all slides */
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel{
+	height: auto;
+	width: 100%;
+	position: relative;
+	
+/*background-color: red;*/
+}
+.carousel-inner{
+	height: auto;
+	width: 100%;
+}
+ol li{
+	margin-right: 20px !important;
+}
+.navbar{
+	height: 100px;
+	background-color: rgba(244,244,244,.4);
+	padding-bottom: 0px;
+	margin-bottom: 0px !important;
+	position: absolute !important;
+	width: 100%;
+	z-index: 999;
+}
+.cont-height{
+	height: 100px;
+}
+.navbar-header{
+	height: 100px;
+}
+.meadicare{
+	color: white;font-size: 50px;text-transform: capitalize;line-height: 60px;
+	font-weight: bolder;
+}
+.plus-icon{
+	color: white;
+	font-size: 30px;
+	margin-right: 20px;
+	line-height: 45px;
+}
+.syr-icon{
+	color: white;
+	font-size: 30px;
+	margin-left: 20px;
+	line-height: 45px;
+}
+ul li a{
+	font-size: 20px;
+	color: white;
+	transition: .5s;
+	text-transform: capitalize;
+}
+ul{
+	padding-top: 20px;
+}
+ul li a:hover{
+	background-color: transparent !important;
+	color: red;
+}
+.nav-links{
+	margin-left: 110px !important;
+}
+.carousel-caption{
+	height: 200px;
+	/*background-color: red;*/
+	margin-bottom:150px;
+	margin-left: -80px;
+}
+.ini-text{
+	color: white;font-size: 50px;text-transform: capitalize;font-weight: bolder;
+}
+.services{
+	height: auto;background-color:white;margin-top: 50px;
+}
+.icn{
+	height: 70px;width: 70px;background-color: rgb(88, 141, 226);float: left;
+	margin-top: 20px;
+}
+.icn1{
+	color: white;
+	font-size: 40px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.blog{
+	height: 800px;
+	background: url(bg4.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+.text1{
+	height: 200px;width: 360px;background-color: white;box-sizing: border-box;padding: 30px;
+}
+.treatment{
+	height: 80px;width: 80px;border-radius: 100%;background-color: red;margin-top: 50px;float: left;
+}
+.footer{
+	background: url(bg3.jpg);
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+
+}
+.modal-content{
+	background: url(bg1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 30px;
+}
+ol{
+	position: absolute;
+		top: 50%;
+		left: 120% !important;
+}
+ol li{
+	display: block !important;
+	margin: 20px !important;
+}
+.blogsize{
+	transition: .5s;
+}
+.blogsize:hover{
+	transform: scale(1.1,1.1);
+
+}
+.btncolor{
+	transition: .5s;
+}
+.btncolor:hover{
+	background: red !important;
+}
+
+	</style>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+
+<!--navbar-->
+
+<nav class="navbar">
+<div class="container cont-height">
+	
+<div class="navbar-header">
+	<a href="#" class="navbar-brand"><span class="fas fa-plus plus-icon"></span><span class="meadicare"><i>m<span style="color: red;">edicare</span></i></span><span class="	fas fa-syringe syr-icon"></span></a>
+</div>
+
+<ul class="nav navbar-nav navbar-left nav-links">
+	<li><a href="home.html">home</a></li>
+	<li><a href="about1.html">about us</a></li>
+	<li><a href="#">pages</a></li>
+	<li><a href="appointment1.html">appointment</a></li>
+	<li><a href="contact1.html">contact us</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+	<button type="button" class="btn btn-lg btncolor" style="background-color: black;color: white" data-toggle="modal" data-target="#mymodal"><span class="glyphicon glyphicon-log-in"></span> Login
+	</button>
+
+	
+	
+</ul>
+
+</div>	
+</nav>
+
+<!--modal-->
+<div id="mymodal" class="modal fade">
+		<div class="modal-dialog">
+			
+				
+<div class="modal-content">
+	<div class="modal-header" style="border-bottom: 0px;">
+		<h1 style="color: white;margin-left: 130px;">Login Form</h1>
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	</div>
+
+	<div class="modal-body" style="border-bottom: 0px;">
+		
+		<form style="margin-top: -30px;">
+			<div class="form-group text-right" style="margin-top: 20px;">
+				<label style="color: white">Your Name</label>
+				<input type="text" name="yn" class="form-control" style="height: 50px; border-radius: 0px;">
+			</div>
+
+			<div class="form-group text-right" style="margin-top: 20px;">
+				<label style="color: white">Password</label>
+				<input type="Password" name="pa" class="form-control" style="height: 50px; border-radius: 0px;"> 
+			</div>
+
+			<button type="button" class="btn btn-danger btn-block" style="color: white;margin-top: 40px;height: 50px; border-radius: 0px;">Login</button>
+
+
+		</form>
+
+		<h4 class="text-center" style="color: white;margin-top: 40px;">Forgot your password?</h4>
+
+		<h4 class="text-center" style="margin-top: 40px;">Dont hava an account? <span style="color: red;">create one now</span></h4>
+	</div>
+
+	
+</div>
+
+</div>
+
+		</div>
+
+
+
+
+<!--carousel-->
+
+<div id="mycor" class="carousel slide">
+	<!--indicators-->
+	<ol class="carousel-indicators">
+		<li data-target="#mycor" data-slide-to="0" class="active"></li>
+		<li data-target="#mycor" data-slide-to="1"></li>
+		<li data-target="#mycor" data-slide-to="2"></li>
+</ol>
+
+    <!--wrappers item-->
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="1.jpg" style="height: auto;width: 100%">
+			<div class="carousel-caption">
+				<h1 class="text-left ini-text">Medical services that you <span style="background-color:rgb(88, 141, 226)">can trust</span></h1>
+				<h4 class="text-left" style="color: white;line-height: 30px;">Medicare Hospitals has been setting standards since its inception in 2005 regarded as best hospital in Punjab Ludhiana India.</h4>
+			</div>
+		</div>
+		<div class="item">
+			<img src="banner2.jpg" style="height: auto;width: 100%;">
+			<div class="carousel-caption">
+				<h1 class="text-left ini-text">Medical excellence  <span style="background-color:rgb(88, 141, 226)">every day</span></h1>
+				<h4 class="text-left" style="color: white;line-height: 30px;">Medicare Hospitals has been setting standards since its inception in 2005 regarded as best hospital in Punjab Ludhiana India.</h4>
+			</div>
+		</div>
+		<div class="item">
+			<img src="banner1.jpg" style="height: auto;width: 100%;">
+			<div class="carousel-caption">
+				<h1 class="text-left ini-text">The Hospital of the <span style="background-color:rgb(88, 141, 226)" >future, today</span></h1>
+				<h4 class="text-left" style="color: white;line-height: 30px;">Medicare Hospitals has been setting standards since its inception in 2005 regarded as best hospital in Punjab Ludhiana India.</h4>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<!--commitment-->
+<div class="container" style="height:auto;margin-top: 50px;/*background-color: red;*/
+">
+	
+<div class="row">
+	
+<div class="col-md-4">
+	<img src="b2.png" style="height: 500px;">	
+</div>
+<div class="col-md-8 text-justified">
+	<h1 class="text-center" style="color: rgb(88, 141, 226);text-transform: capitalize;font-weight: bolder;">Your Care, Our Commitment</h1>
+	<h3 style="margin-left: 130px;margin-top: 30px;line-height: 40px;"><i>Cum sociis natoque penatibus et magnis dis parturient montesmus, Proin vel nibh et elit mollis commodo et nec augue tristique sed.</i></h3>
+	<h5 style="margin-left: 130px;margin-top: 30px;line-height: 30px; color: gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse porta erat sit amet eros sagittis, quis hendrerit libero aliquam. Fusce semper augue ac dolor efficitur, a pretium metus pellentesque.</h5>
+</div>
+
+</div>
+
+</div>
+
+<!--services-->
+<div class="container-fluid services">
+
+	
+<h1 style="text-transform: capitalize;font-size: 50px;margin-top: 25px;" class="text-center">Our Best Services</h1>
+<div style="margin: auto;width: 550px;">
+<span class="	fas fa-user-md" style="color: red;font-size: 40px;margin-left: 260px;"></span>
+<h4>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+</div>
+
+<div class="container" style="height: auto; margin-top: 50px;">
+<div class="row">
+	
+	<div class="col-md-4">
+            <div class="icn">
+			<span class="	fas fa-user-md icn1"></span>
+		</div>
+		<div style="border: 2px solid black;float: left;">
+			<h3 style="font-weight: bolder;">General health care</h3>
+			<p>Lorem ipsum magna, vehicula ut porta ete.</p>
+		</div>
+
+		<div class="icn" style="margin-top: 70px;">
+			<span class="fas fa-syringe icn1"></span>
+		</div>
+		<div style="border: 2px solid black;float: left;margin-top: 50px;">
+			<h3 style="font-weight: bolder;">Dental services</h3>
+			<p>Lorem ipsum magna, vehicula ut porta ete.</p>
+		</div>
+
+		<div class="icn" style="margin-top: 70px;">
+			<span class="fas fa-syringe icn1"></span>
+		</div>
+		<div style="border: 2px solid black;float: left;margin-top: 50px;">
+			<h3 style="font-weight: bolder;">Medical Treatment</h3>
+			<p>Lorem ipsum magna, vehicula ut porta ete.</p>
+		</div>
+
+	</div>
+
+	<div class="col-md-4">
+		<img src="Masterfile.jpg" style="height: 400px;width: 300px;">
+	</div>
+
+	<div class="col-md-4">
+      
+      <div style="border: 2px solid black;float: left;margin-left: -30px;">
+			<h3 style="font-weight: bolder;">Cardiac Clinic</h3>
+			<p>Lorem ipsum magna, vehicula ut porta ete.</p>
+		</div>
+ <div class="icn">
+			<span class="fas fa-first-aid icn1"></span>
+		</div>
+
+		<div style="border: 2px solid black;float: left;margin-top: 50px;margin-left: -30px;">
+			<h3 style="font-weight: bolder;">Orthopedics</h3>
+			<p>Lorem ipsum magna, vehicula ut porta ete.</p>
+		</div>
+		<div class="icn" style="margin-top: 70px;">
+			<span class="fas fa-syringe icn1"></span>
+		</div>
+
+		<div style="border: 2px solid black;float: left;margin-top: 50px;margin-left: -30px;">
+			<h3 style="font-weight: bolder;">Laboratory</h3>
+			<p>Lorem ipsum magna, vehicula ut porta ete.</p>
+		</div>
+		<div class="icn" style="margin-top: 70px;">
+			<span class="fas fa-syringe icn1"></span>
+		</div>
+
+	</div>
+</div>
+
+</div>
+</div>
+
+<!--blog-->
+<div class="container-fluid blog text-center">
+	
+	<h1 style="font-size: 50px;margin-top: 50px;color: white">Our Blog</h1>
+	<div style="margin: auto;">
+		<span class="	fas fa-user-md" style="color:white;font-size: 30px;"></span>
+		<h4 style="color: white;word-spacing: 5px;line-height: 60px;">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+	</div>
+
+<div class="container" style="height: auto;margin-top: 50px;/*background-color: red;*/	">
+	<div class="row">
+		<div class="col-md-4 blogsize">
+		<img src="blog1.jpg" style="height: 270px;width: 360px;">
+		<div  class="text-left text1">
+			<h3>Sit voluptatem<br> accusantium doloremque</h3>
+			<span class="fas fa-user-alt" style="color: red;font-size: 20px;"></span>
+		</div>	
+		</div>
+
+		<div class="col-md-4 blogsize">
+			<img src="blog2.jpg" style="height: 270px;width: 360px;">
+			<div class="text-left text1">
+				<h3>Sit voluptatem<br> accusantium doloremque</h3>
+				<span class="fas fa-user-alt" style="color: red;font-size: 20px;"></span>
+			</div>
+		</div>
+
+		<div class="col-md-4 blogsize">
+			<img src="blog3.jpg" style="height: 270px;width: 360px;">
+			<div class="text1 text-left">
+				<h3>Sit voluptatem<br> accusantium doloremque</h3>
+				<span class="fas fa-user-alt" style="color: red;font-size: 20px;"></span>
+			</div>
+		</div>
+
+	</div>
+
+</div>
+
+</div>
+
+<div class="container-fluid" style="height: auto;background-color: white;">
+	<div class="container" style="margin-top: 40px;height: auto;">
+		<h1 class="text-center" style="font-size: 50px;text-transform: capitalize;">Best Treatments</h1>
+	<div style="margin: auto;width: 600px;">
+		<span class="	fas fa-user-md" style="color:red;font-size: 30px;margin-left: 280px;"></span>
+		<h4 style="word-spacing: 5px;line-height: 50px;">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h4>
+	</div>
+
+   <div class="row" >
+   	<div class="col-md-6">
+   		<img src="b5.png" style="height: 350px;">
+   	</div>
+
+   	<div class="col-md-6">
+   		<div  class="treatment">
+			<span class="fas fa-syringe icn1"></span>
+		</div>
+		<div style="height: auto;width: 400px;float: left;margin-top: 30px;margin-left: 30px;" class="text-left">
+			<h3>Oxygen therapy</h3>
+			<p style="line-height: 30px;">Incididunt ut labore et dolore magna aliqua, sed do eiusmod tempor incididunt ut</p>
+		</div>
+
+
+		<div  class="treatment">
+			<span class="fas fa-syringe icn1"></span>
+		</div>
+		<div style="height: auto;width: 400px;float: left;margin-top: 30px;margin-left: 30px;" class="text-left">
+			<h3>Medical procedure</h3>
+			<p style="line-height: 30px;">Incididunt ut labore et dolore magna aliqua, sed do eiusmod tempor incididunt ut</p>
+		</div>
+   	</div>
+
+   </div>
+
+	</div>
+</div>
+
+<!--footer-->
+<div class="container-fluid footer">
+	<div class="container" style="height: auto;margin-top: 50px;padding-bottom: 50px;border-bottom: 2px solid white">
+		<div class="row">
+			<div class="col-md-4 text-left">
+				<div style="float: left;">
+					<h1 style="color: white;font-weight: bolder;letter-spacing: 2px;"><i><span style="color: red;">M</span>edic</i></h1>
+				</div>
+				<div style="float: left;">
+					<span class="fas fa-syringe" style="color: white;font-size: 20px;line-height: 80px;margin-left: 10px;"></span>
+				</div>
+
+				<h4 style="margin-top: 80px;color: white;line-height: 30px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h4>
+			</div>
+
+				<div class="col-md-4 text-left">
+					<h1 style="color:white">Address</h1>
+					<h4 style="color: white;line-height: 30px;">The company name Lorem ipsum dolor,New York,Morris Park.</h4>
+					<h4 style="color: white;line-height: 30px;">1234567890</h4>
+					<h4 style="color: white;line-height: 30px;"><a href="#" style="text-decoration: none;color: white">mail@example.com</a></h4>
+
+				</div>
+
+					<div class="col-md-4 text-left">
+							<h1 style="color:white">Quick Links</h1>
+							<h4><a href="#" style="text-decoration: none;color: white">Home</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Gallery</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">About</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Contact</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Appointment</a></h4>
+					</div>
+		</div>
+	</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+	.uppersection{
+			height: auto;background: rgb(88, 141, 226);
+			color: white;	
+			position: absolute;
+			width: 100%;
+			z-index: 999;
+		}
+		.uppericn{
+			font-size: 20px;margin-right: 20px;
+			line-height: 70px !important;
+		}
+		.navbar{
+	height: 100px;
+	background-color: rgba(244,244,244,.4);
+	padding-bottom: 0px;
+	margin-bottom: 0px !important;
+	position: absolute !important;
+	width: 100%;
+	
+	z-index: 999;
+}
+.cont-height{
+	height: 100px;
+}
+.navbar-header{
+	height: 100px;
+}
+.meadicare{
+	color: white;font-size: 50px;text-transform: capitalize;line-height: 60px;
+	font-weight: bolder;
+}
+.plus-icon{
+	color: white;
+	font-size: 30px;
+	margin-right: 20px;
+	line-height: 45px;
+}
+.syr-icon{
+	color: white;
+	font-size: 30px;
+	margin-left: 20px;
+	line-height: 45px;
+}
+ul li a{
+	font-size: 20px;
+	color: white;
+	transition: .5s;
+	text-transform: capitalize;
+}
+ul{
+	padding-top: 20px;
+}
+ul li a:hover{
+	background-color: transparent !important;
+	color: red;
+}
+.nav-links{
+	margin-left: 200px !important;
+}
+.bannr3{
+height: 400px;
+background: url(banner3.jpg);
+background-repeat: no-repeat;
+background-size: 100% 400px;
+background-position: top-left;
+}
+.abtus{
+	height: auto;
+	margin-top: 50px;
+	background-origin: yellow;
+	padding-left: 150px !important;
+	padding-right: 150px !important;
+}
+.docimg{
+	height: 700px;
+	/*background: url(indiandoctor.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 700px;*/
+	background-attachment: scroll;
+	/*transform: translate(80px,0px);*/
+}
+.footer{
+	background: url(bg3.jpg);
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+
+}
+.modal-content{
+	background: url(bg1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 30px;
+}
+
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+
+<nav class="navbar">
+<div class="container cont-height">
+	
+<div class="navbar-header">
+	<a href="#" class="navbar-brand"><span class="fas fa-plus plus-icon"></span><span class="meadicare"><i>m<span style="color: red;">edic</span></i></span><span class="	fas fa-syringe syr-icon"></span></a>
+</div>
+
+<ul class="nav navbar-nav navbar-left nav-links">
+	<li><a href="home.html">home</a></li>
+	<li><a href="about1.html">about us</a></li>
+	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">pages
+		<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<li><h4><a href="#service" class="dropdown-item scroll" style="color: black;text-decoration: none;">Services</a></h4></li>
+	<li><h4>Gallery</h4></li>
+	<li><h4>Blog</h4></li>
+	<li class="divider"></li>
+	<li><h4>Single Page</h4></li>
+    </ul>
+</li>
+
+
+	<li><a href="appointment1.html">appointment</a></li>
+	<li><a href="contact1.html">contact us</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+	<button type="button" class="btn btn-lg btncolor" style="background-color: black;color: white" data-toggle="modal" data-target="#mymodal"><span class="glyphicon glyphicon-log-in"></span> Login
+	</button>
+
+	
+	
+</ul>
+
+</div>	
+</nav>
+
+<!--modal-->
+<div id="mymodal" class="modal fade">
+		<div class="modal-dialog">
+			
+				
+<div class="modal-content">
+	<div class="modal-header" style="border-bottom: 0px;">
+		<h1 style="color: white;margin-left: 130px;">Login Form</h1>
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	</div>
+
+	<div class="modal-body" style="border-bottom: 0px;">
+		
+		<form style="margin-top: -30px;">
+			<div class="form-group text-right" style="margin-top: 20px;">
+				<label style="color: white">Your Name</label>
+				<input type="text" name="yn" class="form-control" style="height: 50px; border-radius: 0px;">
+			</div>
+
+			<div class="form-group text-right" style="margin-top: 20px;">
+				<label style="color: white">Password</label>
+				<input type="Password" name="pa" class="form-control" style="height: 50px; border-radius: 0px;"> 
+			</div>
+
+			<button type="button" class="btn btn-danger btn-block" style="color: white;margin-top: 40px;height: 50px; border-radius: 0px;">Login</button>
+
+
+		</form>
+
+		<h4 class="text-center" style="color: white;margin-top: 40px;">Forgot your password?</h4>
+
+		<h4 class="text-center" style="margin-top: 40px;">Dont hava an account? <span style="color: red;">create one now</span></h4>
+	</div>
+
+	
+</div>
+
+</div>
+
+		</div>
+
+
+<div class="container-fluid bannr3"></div>
+
+<div class="container-fluid" style="height: 50px;background-color: lightgray"></div>
+
+<!--appointment-->
+<div class="container-fluid abtus">
+
+	<div style="margin: auto;width: 600px;">
+	<h1 class="text-center" style="font-size: 50px;">Appointment</h1>
+	<span class="	fas fa-user-md" style="color: red;font-size: 30px;margin-left: 260px;"></span>
+	<h4 class="text-center" style="margin-top: 20px;">If you want to kill yourself or the loved one please make a appointment</h4>
+</div>
+
+<div class="row" style="margin-top: 50px; margin-bottom: 50px">
+	<div class="col-md-6 docimg" >
+		<img src="indiandoctor.jpg" style="height: 700px;width: 100%;background-attachment: fixed;">
+	</div>
+	<div class="col-md-6" style="height: auto;">
+			<h1 class="text-center">Fill your appointment form</h1>
+			<form>
+				<div class="form-group" style="margin-top: 30px;margin-bottom: 30px;">
+					<label style="margin-bottom: 20px;color: gray">Your Name</label>
+					<input type="text" name="nm" placeholder="Your Name" class="form-control" style="height: 50px;box-shadow: 0px 3px 10px black">
+				</div>
+
+               		<div class="form-group" style="margin-bottom: 30px;">
+					<label style="margin-bottom: 20px;color: gray">Your Email</label>
+					<input type="Email" style="height: 50px;box-shadow: 0px 3px 10px black;border-radius: 0px" name="em" placeholder="Your Email" class="form-control">
+				</div>
+
+								<div class="form-group" style="margin-bottom: 30px;">
+					<label style="margin-bottom: 20px;color: gray">Select Your Doctor</label>
+                    <select class="form-control" style="height: 50px;box-shadow: 0px 3px 10px black;border-radius: 0px">
+                    	<option>Select Your Doctor</option>
+                    	<option>karanveer singh</option>
+                    	<option>rahul</option>
+                    	<option>dhooj</option>
+                    </select>
+				</div>
+
+					<div class="form-group" style="margin-bottom: 30px;">
+					<label style="margin-bottom: 20px;color: gray">Select Date</label>
+					<input type="date" name="da" placeholder="Select Date" style="height: 50px;box-shadow: 0px 3px 10px black;border-radius: 0px" class="form-control">
+				</div>
+
+				<div class="form-group" style="margin-bottom: 50px;">
+					<label style="margin-bottom: 20px;color: gray">Select Speciality</label>
+				 <select class="form-control" style="height: 50px;box-shadow: 0px 3px 10px black;border-radius: 0px">
+                    	<option>Select Speciality</option>
+                    	<option>heart</option>
+                    	<option>ent</option>
+                    	<option>gynae</option>
+                    </select>
+				</div>
+
+				<button type="button" class="btn btn-primary btn-lg">Book Appointment</button>
+			</form>
+	</div>
+</div>
+</div>
+
+<!--footer-->
+<div class="container-fluid footer">
+	<div class="container" style="height: auto;margin-top: 50px;padding-bottom: 50px;border-bottom: 2px solid white">
+		<div class="row">
+			<div class="col-md-4 text-left">
+				<div style="float: left;">
+					<h1 style="color: white;font-weight: bolder;letter-spacing: 2px;"><i><span style="color: red;">M</span>edic</i></h1>
+				</div>
+				<div style="float: left;">
+					<span class="fas fa-syringe" style="color: white;font-size: 20px;line-height: 80px;margin-left: 10px;"></span>
+				</div>
+
+				<h4 style="margin-top: 80px;color: white;line-height: 30px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h4>
+			</div>
+
+				<div class="col-md-4 text-left">
+					<h1 style="color:white">Address</h1>
+					<h4 style="color: white;line-height: 30px;">The company name Lorem ipsum dolor,New York,Morris Park.</h4>
+					<h4 style="color: white;line-height: 30px;">1234567890</h4>
+					<h4 style="color: white;line-height: 30px;"><a href="#" style="text-decoration: none;color: white">mail@example.com</a></h4>
+
+				</div>
+
+					<div class="col-md-4 text-left">
+							<h1 style="color:white">Quick Links</h1>
+							<h4><a href="#" style="text-decoration: none;color: white">Home</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Gallery</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">About</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Contact</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Appointment</a></h4>
+					</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

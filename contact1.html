@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.uppersection{
+			height: auto;background: rgb(88, 141, 226);
+			color: white;	
+			position: absolute;
+			width: 100%;
+			z-index: 999;
+		}
+		.uppericn{
+			font-size: 20px;margin-right: 20px;
+			line-height: 70px !important;
+		}
+		.navbar{
+	height: 100px;
+	background-color: rgba(244,244,244,.4);
+	padding-bottom: 0px;
+	margin-bottom: 0px !important;
+	position: absolute !important;
+	width: 100%;
+	top: 70px;
+	z-index: 999;
+}
+.cont-height{
+	height: 100px;
+}
+.navbar-header{
+	height: 100px;
+}
+.meadicare{
+	color: white;font-size: 50px;text-transform: capitalize;line-height: 60px;
+	font-weight: bolder;
+}
+.plus-icon{
+	color: white;
+	font-size: 30px;
+	margin-right: 20px;
+	line-height: 45px;
+}
+.syr-icon{
+	color: white;
+	font-size: 30px;
+	margin-left: 20px;
+	line-height: 45px;
+}
+ul li a{
+	font-size: 20px;
+	color: white;
+	transition: .5s;
+	text-transform: capitalize;
+}
+ul{
+	padding-top: 20px;
+}
+ul li a:hover{
+	background-color: transparent !important;
+	color: red;
+}
+.nav-links{
+	margin-left: 200px !important;
+}
+.bannr3{
+height: 400px;
+background: url(banner3.jpg);
+background-repeat: no-repeat;
+background-size: 100% 400px;
+background-position: top-left;
+}
+.abtus{
+	height: auto;
+	margin-top: 50px;
+	padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	.syrimg{
+		width: 40%;height: 700px;background-color: green;float: left;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		background: url(1.jpg);
+		background-repeat: no-repeat;
+		background-size: 230% 700px;
+	}
+	.syrimg1{
+		width: 60%;height: 700px;float: left;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		box-sizing: border-box;
+		padding: 30px;
+		
+	}
+	.footer{
+	background: url(bg3.jpg);
+	height: 500px;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-attachment: fixed;
+
+}
+.modal-content{
+	background: url(bg1.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	padding: 30px;
+}
+	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+</head>
+<body>
+
+<!--uppersection-->
+<div class="container-fluid uppersection">
+	<div class="container" style="height: 70px;">
+		<div class="row">
+			<div class="col-md-5" style="height: 70px;">
+				<span class="	fab fa-facebook-f uppericn" style="margin-left: 10px;"></span>
+				<span class="	fab fa-google-plus-g uppericn"></span>
+				<span class="	fab fa-pinterest-p uppericn"></span>
+				<span class="	fab fa-twitter" style="font-size: 20px;" ></span>
+				<h4 style="margin-top: -40px;margin-left: 200px;">Parma Via Modena,BO, Italy</h4>
+			</div>
+			<div class="col-md-7 text-right" style="height: 70px;">
+				<span class="	far fa-envelope-open uppericn"> info@example.com</span>
+				<span class="	fas fa-phone uppericn"> +1 000263676</span>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--navbar-->
+
+<nav class="navbar">
+<div class="container cont-height">
+	
+<div class="navbar-header">
+	<a href="#" class="navbar-brand"><span class="fas fa-plus plus-icon"></span><span class="meadicare"><i>m<span style="color: red;">edic</span></i></span><span class="	fas fa-syringe syr-icon"></span></a>
+</div>
+
+<ul class="nav navbar-nav navbar-left nav-links">
+	<li><a href="home.html">home</a></li>
+	<li><a href="about1.html">about us</a></li>
+	<li><a href="#" class="dropdown-toggle" data-toggle="dropdown">pages
+		<span class="caret"></span></a>
+	<ul class="dropdown-menu">
+	<li><h4><a href="#service" class="dropdown-item scroll" style="color: black;text-decoration: none;">Services</a></h4></li>
+	<li><h4>Gallery</h4></li>
+	<li><h4>Blog</h4></li>
+	<li class="divider"></li>
+	<li><h4>Single Page</h4></li>
+    </ul>
+</li>
+
+
+	<li><a href="appointment1.html">appointment</a></li>
+	<li><a href="contact1.html">contact us</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+	<button type="button" class="btn btn-lg btncolor" style="background-color: black;color: white" data-toggle="modal" data-target="#mymodal"><span class="glyphicon glyphicon-log-in"></span> Login
+	</button>
+
+	
+	
+</ul>
+
+</div>	
+</nav>
+
+<!--modal-->
+<div id="mymodal" class="modal fade">
+		<div class="modal-dialog">
+			
+				
+<div class="modal-content">
+	<div class="modal-header" style="border-bottom: 0px;">
+		<h1 style="color: white;margin-left: 130px;">Login Form</h1>
+		<button type="button" class="close" data-dismiss="modal">&times;</button>
+	</div>
+
+	<div class="modal-body" style="border-bottom: 0px;">
+		
+		<form style="margin-top: -30px;">
+			<div class="form-group text-right" style="margin-top: 20px;">
+				<label style="color: white">Your Name</label>
+				<input type="text" name="yn" class="form-control" style="height: 50px; border-radius: 0px;">
+			</div>
+
+			<div class="form-group text-right" style="margin-top: 20px;">
+				<label style="color: white">Password</label>
+				<input type="Password" name="pa" class="form-control" style="height: 50px; border-radius: 0px;"> 
+			</div>
+
+			<button type="button" class="btn btn-danger btn-block" style="color: white;margin-top: 40px;height: 50px; border-radius: 0px;">Login</button>
+
+
+		</form>
+
+		<h4 class="text-center" style="color: white;margin-top: 40px;">Forgot your password?</h4>
+
+		<h4 class="text-center" style="margin-top: 40px;">Dont hava an account? <span style="color: red;">create one now</span></h4>
+	</div>
+
+	
+</div>
+
+</div>
+
+		</div>
+
+
+<div class="container-fluid bannr3"></div>
+
+<div class="container-fluid" style="height: 50px;background-color: lightgray"></div>
+
+<!--contactus-->
+<div class="container-fluid abtus">
+
+	<div style="margin: auto;width: 600px;">
+	<h1 class="text-center" style="font-size: 50px;">Contact Us</h1>
+	<span class="	fas fa-user-md" style="color: red;font-size: 30px;margin-left: 260px;"></span>
+	<h4 class="text-center" style="margin-top: 20px;">If you want to kill yourself or the loved one please make a appointment</h4>
+</div>
+ 
+<div class="syrimg">
+	
+</div>
+<div class="syrimg1 text-center">
+	<h1 style="font-size: 50px;">Get In Touch</h1>
+
+	<div class="row" style="margin-left: 50px;margin-top: 50px;">
+		<div class="col-md-6">
+			<form>
+				<input type="text" name="nm" placeholder="Firstname" class="form-control" style="height: 50px;width: 330px;box-shadow: 0px 3px 10px black">
+			</form>
+		</div>
+		<div class="col-md-6">
+						<form>
+				<input type="text" name="lm" placeholder="Lastname" style="height: 50px;width: 320px;margin-bottom: 30px;box-shadow: 0px 3px 10px black" class="form-control">
+			</form>
+		</div>
+
+		<div class="col-md-12">
+						<form>
+				<input type="email" name="em" placeholder="Email" style="height: 50px;width: 95%;margin-bottom: 30px;box-shadow: 0px 3px 10px black" class="form-control">
+			</form>
+		</div>
+
+		<div class="col-md-12">
+						<form>
+				<input type="text" name="lm" placeholder="Lastname" style="height: 50px;width: 95%;margin-bottom: 30px;box-shadow: 0px 3px 10px black" class="form-control">
+			</form>
+		</div>
+
+		<div class="col-md-12">
+			<textarea rows="7" class="form-control" style="width: 95%;margin-bottom: 50px;box-shadow: 0px 3px 10px black"></textarea>
+		</div>
+
+        <div class="col-md-12">
+		<button type="button" class="btn btn-primary pull-left">Send Message</button>
+	    </div>
+	</div>
+</div>
+</div>
+
+<!--map-->
+<div class="container-fluid" style="height: auto;margin-top: 50px;padding-left: 0px;padding-right: 0px;">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6845.906273338773!2d75.76837562357342!3d30.915934030823305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a813b949ae787%3A0x8de32c92c0b3eb6!2sSouth+City%2C+Ayali+Khurd%2C+Punjab!5e0!3m2!1sen!2sin!4v1553704927446" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	
+</div>	
+
+<!--footer-->
+<div class="container-fluid footer">
+	<div class="container" style="height: auto;margin-top: 50px;padding-bottom: 50px;border-bottom: 2px solid white">
+		<div class="row">
+			<div class="col-md-4 text-left">
+				<div style="float: left;">
+					<h1 style="color: white;font-weight: bolder;letter-spacing: 2px;"><i><span style="color: red;">M</span>edic</i></h1>
+				</div>
+				<div style="float: left;">
+					<span class="fas fa-syringe" style="color: white;font-size: 20px;line-height: 80px;margin-left: 10px;"></span>
+				</div>
+
+				<h4 style="margin-top: 80px;color: white;line-height: 30px;">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</h4>
+			</div>
+
+				<div class="col-md-4 text-left">
+					<h1 style="color:white">Address</h1>
+					<h4 style="color: white;line-height: 30px;">The company name Lorem ipsum dolor,New York,Morris Park.</h4>
+					<h4 style="color: white;line-height: 30px;">1234567890</h4>
+					<h4 style="color: white;line-height: 30px;"><a href="#" style="text-decoration: none;color: white">mail@example.com</a></h4>
+
+				</div>
+
+					<div class="col-md-4 text-left">
+							<h1 style="color:white">Quick Links</h1>
+							<h4><a href="#" style="text-decoration: none;color: white">Home</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Gallery</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">About</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Contact</a></h4>
+							<h4><a href="#" style="text-decoration: none;color: white">Appointment</a></h4>
+					</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
